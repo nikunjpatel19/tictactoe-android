@@ -8,7 +8,7 @@ plugins {
 
 android {
     namespace = "com.nikunjprojects.onlinetictactoe"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.nikunjprojects.onlinetictactoe"
@@ -52,6 +52,16 @@ android {
     }
 }
 
+// Put this anywhere in the file (e.g., after android { } )
+configurations.configureEach {
+    resolutionStrategy {
+        force(
+            "org.jetbrains.kotlinx:kotlinx-serialization-core:1.6.3",
+            "org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3"
+        )
+    }
+}
+
 dependencies {
 
     implementation(libs.androidx.core.ktx)
@@ -87,4 +97,13 @@ dependencies {
 
     // Kotlinx Serialization
     implementation(libs.kotlinx.serialization.json)
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-core:1.6.3")
+
+//    // lock serialization versions for Kotlin 1.9.x
+//    constraints {
+//        implementation("org.jetbrains.kotlinx:kotlinx-serialization-core:1.6.3") {
+//            because("Kotlin 1.9.x is incompatible with kotlinx-serialization 1.7.x+")
+//        }
+//        implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
+//    }
 }

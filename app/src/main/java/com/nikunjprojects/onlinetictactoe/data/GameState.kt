@@ -2,6 +2,7 @@ package com.nikunjprojects.model
 
 import kotlinx.serialization.Serializable
 
+
 @Serializable
 data class GameState(
     val playerAtTurn: Char? = 'X',
