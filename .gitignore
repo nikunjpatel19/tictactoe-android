@@ -1,15 +1,19 @@
+# Gradle
+.gradle/
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# IntelliJ / Android Studio
 *.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+.idea/
+!.idea/codeStyles  # (optional: keep shared code style if you want to enforce formatting)
 local.properties
+
+# OS-specific
+.DS_Store
+
+# Keystore files (don’t commit private keys)
+*.jks
+*.keystore
