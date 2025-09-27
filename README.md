@@ -82,9 +82,12 @@ app/
 ```
 
 ## Screenshots (Gallery)
-```
-TODO: Add screenshots (docs/screen_home.png, docs/screen_game.png)
-```
+<p align="center">
+  <img src="mockups/image-1.png" alt="App Mockup 1" width="300" />
+  <img src="mockups/image-2.png" alt="App Mockup 2" width="300" />
+  <img src="mockups/image-3.png" alt="App Mockup 3" width="300" />
+</p>
+
 
 ## License
-All rights reserved. TODO: Replace with MIT or Apache-2.0.
+All rights reserved.
